@@ -2,9 +2,8 @@ import { Trans } from '@lingui/macro'
 import { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
-import image404 from 'assets/images/404-image.png'
 import { Button } from 'theme/Buttons'
-import { Box, Flex, Image, Type } from 'theme/base'
+import { Box, Flex, Type } from 'theme/base'
 import { LINKS } from 'utils/config/constants'
 import ROUTES from 'utils/config/routes'
 
@@ -33,11 +32,11 @@ export default function NotFound({
         p={3}
         sx={{ maxWidth: 600, width: '100%', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}
       >
-        <Image src={image404} sx={{ maxWidth: [200, 250], mb: 4 }} alt="404" />
+        <Type.H1>404</Type.H1>
         <Type.LargeBold mb={16} textAlign="center">
           {title}
         </Type.LargeBold>
-        <Type.Body mb={4} color="neutral3" textAlign="center">
+        <Type.Body mb={4} color="neutral5" textAlign="center">
           {message}
         </Type.Body>
         {back}
